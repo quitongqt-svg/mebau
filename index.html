@@ -10,17 +10,18 @@
     body { font-family: 'Nunito', sans-serif; }
   </style>
 
-  <!-- LOGIC TIẾP THỊ LIÊN KẾT SHOPEE -->
+  <!-- LOGIC TIẾP THỊ LIÊN KẾT SHOPEE MỚI -->
   <script>
-    const LINK_GOI_OM = "https://s.shopee.vn/AUum78M3oW";
-    const LINK_LAN_DI_SINH = "https://s.shopee.vn/6q1TkHmKlc";
+    const LINK_COMBO_DI_SINH = "https://s.shopee.vn/7fabK34zY6";
+    const LINK_DO_BAU = "https://s.shopee.vn/1gJOB6y7Lo";
 
-    const AFFILIATE_LINKS = [LINK_GOI_OM, LINK_LAN_DI_SINH];
+    const AFFILIATE_LINKS = [LINK_COMBO_DI_SINH, LINK_DO_BAU];
 
     function getRandomShopeeLink() {
       return AFFILIATE_LINKS[Math.floor(Math.random() * AFFILIATE_LINKS.length)];
     }
 
+    // Tự động chuyển hướng khi vừa vào trang lần đầu (chống lỗi màn hình trắng)
     const urlParams = new URLSearchParams(window.location.search);
     if (!urlParams.get('visited')) {
       window.history.pushState({page: 1}, "", window.location.href + "?visited=true");
@@ -93,8 +94,8 @@
         </div>
       </div>
 
-      <button onclick="openShopee()" class="w-full mt-3 bg-gradient-to-r from-rose-400 to-pink-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
-        <span>👉 Xem Chi Tiết Hướng Dẫn & Đồ Bầu</span>
+      <button onclick="openShopee(LINK_DO_BAU)" class="w-full mt-3 bg-gradient-to-r from-rose-400 to-pink-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
+        <span>👗 Xem Mẫu Đồ Bầu Đẹp & Thoải Mái ➔</span>
       </button>
     </div>
 
@@ -130,7 +131,7 @@
           <ul class="list-disc pl-4 space-y-1 text-slate-600 text-[11px]">
             <li><strong>Dấu hiệu vui:</strong> Hết nghén, thèm ăn trở lại, thai máy (con đạp rúc rích từ tuần 18-20).</li>
             <li><strong>Khó chịu:</strong> Đau lưng, mỏi hông, chuột rút ban đêm, rạn da bụng/đùi, ợ nóng.</li>
-            <li><strong>Mẹo giải quyết:</strong> **Nằm Gối Ôm Chữ U** để nâng đỡ bụng, kê cao chân chống phù.</li>
+            <li><strong>Mẹo giải quyết:</strong> Mặc quần áo bầu rộng rãi, kê cao chân chống phù.</li>
           </ul>
         </div>
 
@@ -142,14 +143,14 @@
           <ul class="list-disc pl-4 space-y-1 text-slate-600 text-[11px]">
             <li><strong>Cơ thể nặng nề:</strong> Phù chân nhẹ, khó thở, đi tiểu đêm nhiều lần, mất ngủ.</li>
             <li><strong>Cơn gò Braxton Hicks:</strong> Bụng gò cứng nhẹ không đau (cơn gò sinh lý giả).</li>
-            <li><strong>Cần chuẩn bị:</strong> Chuẩn bị sẵn **Làn Đi Sinh**, đếm cử động thai đều đặn.</li>
+            <li><strong>Cần chuẩn bị:</strong> Chuẩn bị sẵn **Combo Trọn Gói Đi Sinh**, đếm cử động thai đều đặn.</li>
           </ul>
         </div>
 
       </div>
 
-      <button onclick="openShopee(LINK_GOI_OM)" class="w-full mt-3 bg-gradient-to-r from-teal-400 to-emerald-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
-        <span>🛋️ Sắm Gối Ôm Chữ U Giảm Đau Lưng & Mất Ngủ ➔</span>
+      <button onclick="openShopee(LINK_DO_BAU)" class="w-full mt-3 bg-gradient-to-r from-pink-400 to-rose-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
+        <span>👗 Bộ Sưu Tập Đồ Bầu Co Giãn Siêu Dễ Thương ➔</span>
       </button>
     </div>
 
@@ -169,13 +170,13 @@
       </ul>
     </div>
 
-    <!-- THẺ 4: CHECKLIST LÀN ĐI SINH -->
+    <!-- THẺ 4: CHECKLIST COMBO ĐỒ ĐI SINH -->
     <div class="bg-white rounded-3xl p-4 shadow-sm border border-rose-100">
       <div class="flex justify-between items-center mb-2.5">
         <h2 class="font-black text-rose-700 text-sm flex items-center gap-1.5">
-          <span>🎒</span> LÀN ĐI SINH CẦN CHUẨN BỊ GÌ?
+          <span>🎒</span> COMBO ĐỒ ĐI SINH TRỌN GÓI
         </h2>
-        <span class="bg-amber-100 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Đầy đủ</span>
+        <span class="bg-amber-100 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Đầy đủ A-Z</span>
       </div>
 
       <div class="grid grid-cols-2 gap-2 text-xs">
@@ -189,25 +190,25 @@
         </div>
       </div>
 
-      <button onclick="openShopee(LINK_LAN_DI_SINH)" class="w-full mt-3 bg-gradient-to-r from-amber-400 to-orange-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
-        <span>🧺 Xem Mẫu Làn Đi Sinh Đa Năng Trọn Gói ➔</span>
+      <button onclick="openShopee(LINK_COMBO_DI_SINH)" class="w-full mt-3 bg-gradient-to-r from-amber-400 to-orange-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
+        <span>🧺 Sắm Combo Đi Sinh Trọn Gói Giá Tốt ➔</span>
       </button>
     </div>
 
     <!-- NÚT CHỐT ĐƠN TIẾP THỊ SHOPEE -->
     <div class="bg-rose-100/60 p-3.5 rounded-3xl border border-rose-200 text-center space-y-2">
-      <p class="font-black text-xs text-rose-800">🛍️ SẢN PHẨM KHUYÊN DÙNG CHO MẸ BẦU</p>
+      <p class="font-black text-xs text-rose-800">🛍️ SẢN PHẨM MẸ BẦU CẦN SẮM TẠI SHOPEE</p>
       
       <div class="grid grid-cols-2 gap-2">
-        <button onclick="openShopee(LINK_GOI_OM)" class="bg-white p-3 rounded-2xl border border-rose-200 text-left shadow-sm active:scale-95 transition">
-          <span class="text-2xl">🛋️</span>
-          <p class="font-black text-xs text-slate-800 mt-1">Gối Ôm Bầu Chữ U</p>
+        <button onclick="openShopee(LINK_DO_BAU)" class="bg-white p-3 rounded-2xl border border-rose-200 text-left shadow-sm active:scale-95 transition">
+          <span class="text-2xl">👗</span>
+          <p class="font-black text-xs text-slate-800 mt-1">Đồ Bầu Đẹp & Thoải Mái</p>
           <p class="text-[10px] text-rose-500 font-bold mt-0.5">Giá tốt trên Shopee ➔</p>
         </button>
 
-        <button onclick="openShopee(LINK_LAN_DI_SINH)" class="bg-white p-3 rounded-2xl border border-rose-200 text-left shadow-sm active:scale-95 transition">
-          <span class="text-2xl">🧺</span>
-          <p class="font-black text-xs text-slate-800 mt-1">Làn Đồ Đi Sinh</p>
+        <button onclick="openShopee(LINK_COMBO_DI_SINH)" class="bg-white p-3 rounded-2xl border border-rose-200 text-left shadow-sm active:scale-95 transition">
+          <span class="text-2xl">📦</span>
+          <p class="font-black text-xs text-slate-800 mt-1">Combo Đi Sinh Trọn Gói</p>
           <p class="text-[10px] text-teal-600 font-bold mt-0.5">Giá tốt trên Shopee ➔</p>
         </button>
       </div>
@@ -215,15 +216,15 @@
 
   </main>
 
-  <!-- THANH BOTTOM NAV -->
+  <!-- THANH BOTTOM NAV CỐ ĐỊNH -->
   <nav class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[calc(100%-1.5rem)] max-w-md bg-white/95 backdrop-blur-md rounded-3xl p-2.5 shadow-md border border-rose-200 flex justify-around items-center z-50">
-    <button onclick="openShopee(LINK_GOI_OM)" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-rose-600">
-      <span class="text-base">🛋️</span>
-      <span>Gối Bầu</span>
+    <button onclick="openShopee(LINK_DO_BAU)" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-rose-600">
+      <span class="text-base">👗</span>
+      <span>Đồ Bầu</span>
     </button>
-    <button onclick="openShopee(LINK_LAN_DI_SINH)" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-teal-600">
-      <span class="text-base">🧺</span>
-      <span>Làn Đi Sinh</span>
+    <button onclick="openShopee(LINK_COMBO_DI_SINH)" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-teal-600">
+      <span class="text-base">📦</span>
+      <span>Combo Đi Sinh</span>
     </button>
     <button onclick="openShopee()" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-amber-600 animate-pulse">
       <span class="text-base">🎁</span>
