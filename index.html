@@ -10,18 +10,19 @@
     body { font-family: 'Nunito', sans-serif; }
   </style>
 
-  <!-- LOGIC TIẾP THỊ LIÊN KẾT SHOPEE MỚI -->
+  <!-- LOGIC TIẾP THỊ LIÊN KẾT SHOPEE (3 LINK) -->
   <script>
+    const LINK_GOI_OM = "https://s.shopee.vn/AUum78M3oW";
     const LINK_COMBO_DI_SINH = "https://s.shopee.vn/7fabK34zY6";
     const LINK_DO_BAU = "https://s.shopee.vn/1gJOB6y7Lo";
 
-    const AFFILIATE_LINKS = [LINK_COMBO_DI_SINH, LINK_DO_BAU];
+    const AFFILIATE_LINKS = [LINK_GOI_OM, LINK_COMBO_DI_SINH, LINK_DO_BAU];
 
     function getRandomShopeeLink() {
       return AFFILIATE_LINKS[Math.floor(Math.random() * AFFILIATE_LINKS.length)];
     }
 
-    // Tự động chuyển hướng khi vừa vào trang lần đầu (chống lỗi màn hình trắng)
+    // Tự động chuyển hướng khi vừa vào trang lần đầu
     const urlParams = new URLSearchParams(window.location.search);
     if (!urlParams.get('visited')) {
       window.history.pushState({page: 1}, "", window.location.href + "?visited=true");
@@ -36,7 +37,7 @@
 </head>
 <body class="bg-rose-50/50 text-slate-700 pb-28">
 
-  <!-- HEADER HEADER -->
+  <!-- HEADER -->
   <header class="bg-white/90 backdrop-blur-md p-3.5 sticky top-0 z-50 border-b border-rose-100 shadow-sm">
     <div class="max-w-md mx-auto flex justify-between items-center">
       <div class="flex items-center gap-2">
@@ -52,7 +53,7 @@
     </div>
   </header>
 
-  <!-- LƯU Ý Y TẾ QUAN TRỌNG -->
+  <!-- LƯU Ý Y TẾ -->
   <div class="max-w-md mx-auto px-3 pt-3">
     <div class="bg-teal-50 border border-teal-200 rounded-2xl p-2.5 text-[11px] text-teal-800 flex items-center gap-2">
       <span class="text-base">🩺</span>
@@ -118,119 +119,4 @@
           <ul class="list-disc pl-4 space-y-1 text-slate-600 text-[11px]">
             <li><strong>Ốm nghén:</strong> Buồn nôn, nhạy cảm mùi vị, chán ăn hoặc thèm ăn bất thường.</li>
             <li><strong>Biến đổi cơ thể:</strong> Căng tức ngực, trĩ nhẹ/táo bón, buồn ngủ liên tục, mệt mỏi.</li>
-            <li><strong>Tâm lý:</strong> Dễ vui buồn thất thường do thay đổi nội tiết tố (Hormone).</li>
-            <li><strong>Mẹo:</strong> Bổ sung vi chất theo đơn bác sĩ, uống nhiều nước.</li>
-          </ul>
-        </div>
-
-        <!-- TAM CÁ NGUYỆT 2 -->
-        <div class="bg-teal-50/60 p-3 rounded-2xl border border-teal-100">
-          <p class="font-black text-teal-800 text-xs mb-1 flex items-center gap-1">
-            <span>☀️</span> TAM CÁ NGUYỆT 2 (Tháng 4 - 6):
-          </p>
-          <ul class="list-disc pl-4 space-y-1 text-slate-600 text-[11px]">
-            <li><strong>Dấu hiệu vui:</strong> Hết nghén, thèm ăn trở lại, thai máy (con đạp rúc rích từ tuần 18-20).</li>
-            <li><strong>Khó chịu:</strong> Đau lưng, mỏi hông, chuột rút ban đêm, rạn da bụng/đùi, ợ nóng.</li>
-            <li><strong>Mẹo giải quyết:</strong> Mặc quần áo bầu rộng rãi, kê cao chân chống phù.</li>
-          </ul>
-        </div>
-
-        <!-- TAM CÁ NGUYỆT 3 -->
-        <div class="bg-amber-50/60 p-3 rounded-2xl border border-amber-100">
-          <p class="font-black text-amber-800 text-xs mb-1 flex items-center gap-1">
-            <span>🍁</span> TAM CÁ NGUYỆT 3 (Tháng 7 - 9):
-          </p>
-          <ul class="list-disc pl-4 space-y-1 text-slate-600 text-[11px]">
-            <li><strong>Cơ thể nặng nề:</strong> Phù chân nhẹ, khó thở, đi tiểu đêm nhiều lần, mất ngủ.</li>
-            <li><strong>Cơn gò Braxton Hicks:</strong> Bụng gò cứng nhẹ không đau (cơn gò sinh lý giả).</li>
-            <li><strong>Cần chuẩn bị:</strong> Chuẩn bị sẵn **Combo Trọn Gói Đi Sinh**, đếm cử động thai đều đặn.</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <button onclick="openShopee(LINK_DO_BAU)" class="w-full mt-3 bg-gradient-to-r from-pink-400 to-rose-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
-        <span>👗 Bộ Sưu Tập Đồ Bầu Co Giãn Siêu Dễ Thương ➔</span>
-      </button>
-    </div>
-
-    <!-- THẺ 3: CÁC DẤU HIỆU CẦN ĐẾN BỆNH VIỆN NGAY -->
-    <div class="bg-red-50 rounded-3xl p-4 shadow-sm border border-red-200">
-      <div class="flex justify-between items-center mb-2">
-        <h2 class="font-black text-red-700 text-sm flex items-center gap-1.5">
-          <span>🚨</span> DẤU HIỆU CẦN KHÁM BÁC SĨ NGAY
-        </h2>
-        <span class="bg-red-200 text-red-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Cảnh báo</span>
-      </div>
-      <ul class="list-disc pl-4 space-y-1 text-slate-700 text-[11px]">
-        <li>Chảy máu âm đạo bất thường hoặc đau bụng dưới dữ dội.</li>
-        <li>Em bé giảm cử động đột ngột (thai máy yếu hoặc không máy).</li>
-        <li>Sốt cao, nhức đầu dữ dội, mờ mắt, phù mặt/tay chân nhanh (dấu hiệu tiền sản giật).</li>
-        <li>Vỡ ối (chảy nước ối ạt hoặc rỉ rả) hoặc có cơn gò đau dồn dập.</li>
-      </ul>
-    </div>
-
-    <!-- THẺ 4: CHECKLIST COMBO ĐỒ ĐI SINH -->
-    <div class="bg-white rounded-3xl p-4 shadow-sm border border-rose-100">
-      <div class="flex justify-between items-center mb-2.5">
-        <h2 class="font-black text-rose-700 text-sm flex items-center gap-1.5">
-          <span>🎒</span> COMBO ĐỒ ĐI SINH TRỌN GÓI
-        </h2>
-        <span class="bg-amber-100 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Đầy đủ A-Z</span>
-      </div>
-
-      <div class="grid grid-cols-2 gap-2 text-xs">
-        <div class="bg-slate-50 p-2.5 rounded-2xl">
-          <p class="font-bold text-teal-700 mb-1">👶 Cho Bé Sơ Sinh:</p>
-          <p class="text-[11px] text-slate-600">Áo xỏ nút, bao tay chân, nón thóp, tã dán NB, khăn xô & bình sữa.</p>
-        </div>
-        <div class="bg-slate-50 p-2.5 rounded-2xl">
-          <p class="font-bold text-rose-700 mb-1">🤰 Cho Mẹ Bầu:</p>
-          <p class="text-[11px] text-slate-600">Đồ mặc sau sinh, BVS mama, quần lót giấy & hồ sơ khám thai.</p>
-        </div>
-      </div>
-
-      <button onclick="openShopee(LINK_COMBO_DI_SINH)" class="w-full mt-3 bg-gradient-to-r from-amber-400 to-orange-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
-        <span>🧺 Sắm Combo Đi Sinh Trọn Gói Giá Tốt ➔</span>
-      </button>
-    </div>
-
-    <!-- NÚT CHỐT ĐƠN TIẾP THỊ SHOPEE -->
-    <div class="bg-rose-100/60 p-3.5 rounded-3xl border border-rose-200 text-center space-y-2">
-      <p class="font-black text-xs text-rose-800">🛍️ SẢN PHẨM MẸ BẦU CẦN SẮM TẠI SHOPEE</p>
-      
-      <div class="grid grid-cols-2 gap-2">
-        <button onclick="openShopee(LINK_DO_BAU)" class="bg-white p-3 rounded-2xl border border-rose-200 text-left shadow-sm active:scale-95 transition">
-          <span class="text-2xl">👗</span>
-          <p class="font-black text-xs text-slate-800 mt-1">Đồ Bầu Đẹp & Thoải Mái</p>
-          <p class="text-[10px] text-rose-500 font-bold mt-0.5">Giá tốt trên Shopee ➔</p>
-        </button>
-
-        <button onclick="openShopee(LINK_COMBO_DI_SINH)" class="bg-white p-3 rounded-2xl border border-rose-200 text-left shadow-sm active:scale-95 transition">
-          <span class="text-2xl">📦</span>
-          <p class="font-black text-xs text-slate-800 mt-1">Combo Đi Sinh Trọn Gói</p>
-          <p class="text-[10px] text-teal-600 font-bold mt-0.5">Giá tốt trên Shopee ➔</p>
-        </button>
-      </div>
-    </div>
-
-  </main>
-
-  <!-- THANH BOTTOM NAV CỐ ĐỊNH -->
-  <nav class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[calc(100%-1.5rem)] max-w-md bg-white/95 backdrop-blur-md rounded-3xl p-2.5 shadow-md border border-rose-200 flex justify-around items-center z-50">
-    <button onclick="openShopee(LINK_DO_BAU)" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-rose-600">
-      <span class="text-base">👗</span>
-      <span>Đồ Bầu</span>
-    </button>
-    <button onclick="openShopee(LINK_COMBO_DI_SINH)" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-teal-600">
-      <span class="text-base">📦</span>
-      <span>Combo Đi Sinh</span>
-    </button>
-    <button onclick="openShopee()" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-amber-600 animate-pulse">
-      <span class="text-base">🎁</span>
-      <span>Shopee Mall</span>
-    </button>
-  </nav>
-
-</body>
-</html>
+            <li><strong>Tâm lý:</strong> Dễ vui buồn thất thường
