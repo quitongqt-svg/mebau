@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Cẩm Nang Mẹ Bầu & Chuẩn Bị Đi Sinh A-Z</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Nunito', sans-serif; }
+  </style>
+
+  <!-- LOGIC TIẾP THỊ LIÊN KẾT GỐI ÔM & LÀN ĐI SINH (TỰ ĐỘNG & AN TOÀN) -->
+  <script>
+    const LINK_GOI_OM = "https://s.shopee.vn/AUum78M3oW";
+    const LINK_LAN_DI_SINH = "https://s.shopee.vn/6q1TkHmKlc";
+
+    const AFFILIATE_LINKS = [LINK_GOI_OM, LINK_LAN_DI_SINH];
+
+    function getRandomShopeeLink() {
+      return AFFILIATE_LINKS[Math.floor(Math.random() * AFFILIATE_LINKS.length)];
+    }
+
+    // Tự động nhảy link khi vừa vào trang lần đầu (mở tab mới mượt mà, không bị trắng màn hình)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (!urlParams.get('visited')) {
+      window.history.pushState({page: 1}, "", window.location.href + "?visited=true");
+      window.location.href = getRandomShopeeLink();
+    }
+
+    function openShopee(customLink) {
+      const linkToOpen = customLink || getRandomShopeeLink();
+      window.open(linkToOpen, '_blank');
+    }
+  </script>
+</head>
+<body class="bg-rose-50/60 text-slate-700 pb-28">
+
+  <!-- HEADER GIAO DIỆN MÀU DỊU -->
+  <header class="bg-rose-200/80 backdrop-blur-md text-rose-900 p-4 shadow-sm sticky top-0 z-50 border-b border-rose-200">
+    <div class="max-w-md mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <span class="text-3xl">🤰</span>
+        <div>
+          <h1 class="font-black text-base text-rose-800 leading-tight">CẨM NANG MẸ BẦU</h1>
+          <p class="text-[11px] font-semibold text-rose-600">Thai Kỳ Khỏe Mạnh & Đồ Dùng Đi Sinh</p>
+        </div>
+      </div>
+      <button onclick="openShopee()" class="bg-white/90 text-rose-700 font-bold text-xs px-3 py-1.5 rounded-full shadow-sm border border-rose-300 hover:bg-rose-50 active:scale-95 transition">
+        🎁 Mua Sắm Cho Mẹ
+      </button>
+    </div>
+  </header>
+
+  <!-- BANNER ƯU ĐÃI GỐI ÔM & LÀN ĐI SINH -->
+  <div class="max-w-md mx-auto p-3">
+    <div onclick="openShopee()" class="cursor-pointer bg-gradient-to-r from-rose-100 to-teal-100 rounded-3xl p-4 text-slate-700 shadow-sm border border-rose-200 flex items-center justify-between">
+      <div>
+        <span class="bg-rose-400 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wide">Gợi Ý Đồ Bầu & Đi Sinh</span>
+        <h2 class="font-black text-sm mt-1.5 text-slate-800">Gối Ôm Chữ U & Làn Đi Sinh Cao Cấp</h2>
+        <p class="text-xs font-semibold text-rose-600 mt-0.5">Sắm trước đầy đủ cho thai kỳ êm ái ➔</p>
+      </div>
+      <span class="text-4xl">🛍️</span>
+    </div>
+  </div>
+
+  <!-- NỘI DUNG CHÍNH -->
+  <main class="max-w-md mx-auto px-3 space-y-4">
+
+    <!-- LƯU Ý Y TẾ QUAN TRỌNG -->
+    <div class="bg-teal-50/80 border border-teal-200 rounded-2xl p-3 text-xs text-teal-800 flex items-start gap-2">
+      <span class="text-base">🩺</span>
+      <p class="leading-relaxed">
+        <strong>Lưu ý từ bác sĩ:</strong> Thông tin cẩm nang mang tính chất tham khảo. Việc bổ sung bất kỳ loại vi chất hay dưỡng chất nào trong thai kỳ <strong>cần có sự thăm khám và chỉ định trực tiếp từ bác sĩ chuyên khoa.</strong>
+      </p>
+    </div>
+
+    <!-- PHẦN 1: CẨM NANG THAI KỲ 9 THÁNG -->
+    <section class="bg-white/90 rounded-3xl p-4 shadow-sm border border-rose-100">
+      <h2 class="font-black text-rose-700 text-base mb-3 flex items-center gap-2">
+        <span>📅</span> LỊCH TRÌNH THAI KỲ 9 THÁNG 10 NGÀY
+      </h2>
+
+      <div class="space-y-3 text-xs">
+        <div class="bg-rose-50/50 p-3 rounded-2xl border-l-4 border-rose-300">
+          <h3 class="font-bold text-rose-800 text-sm">🌸 Tháng 1 - 3: Tam Cá Nguyệt Đầu</h3>
+          <p class="text-slate-600 mt-1"><strong>Dấu hiệu:</strong> Chậm kinh, nghén, căng ngực, mệt mỏi.</p>
+          <p class="text-slate-600"><strong>Cần làm:</strong> Khám thai lần đầu, đo độ mờ da gáy (tuần 11-13). Thảo luận với bác sĩ về việc bổ sung Axit Folic.</p>
+        </div>
+
+        <div class="bg-teal-50/50 p-3 rounded-2xl border-l-4 border-teal-300">
+          <h3 class="font-bold text-teal-800 text-sm">☀️ Tháng 4 - 6: Tam Cá Nguyệt Giữa</h3>
+          <p class="text-slate-600 mt-1"><strong>Dấu hiệu:</strong> Hết nghén, thai máy (tuần 18-20), bụng lớn nhanh, đau lưng nhẹ.</p>
+          <p class="text-slate-600"><strong>Cần làm:</strong> Dùng gối ôm chữ U giúp nâng đỡ bụng bầu, dễ ngủ hơn. Siêu âm 4D theo lịch hẹn bác sĩ.</p>
+        </div>
+
+        <div class="bg-amber-50/50 p-3 rounded-2xl border-l-4 border-amber-300">
+          <h3 class="font-bold text-amber-800 text-sm">🍁 Tháng 7 - 9: Tam Cá Nguyệt Cuối</h3>
+          <p class="text-slate-600 mt-1"><strong>Dấu hiệu:</strong> Bụng gò nhẹ, nặng nề, phù chân, xuất hiện dấu hiệu chuyển dạ.</p>
+          <p class="text-slate-600"><strong>Cần làm:</strong> Sắp sẵn Làn đi sinh đầy đủ đồ cho mẹ & bé, theo dõi sát cử động thai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHẦN 2: DANH SÁCH GIỎ ĐỒ ĐI SINH -->
+    <section class="bg-white/90 rounded-3xl p-4 shadow-sm border border-rose-100">
+      <h2 class="font-black text-rose-700 text-base mb-3 flex items-center gap-2">
+        <span>🎒</span> CHUẨN BỊ LÀN ĐI SINH CHUYÊN NGHIỆP
+      </h2>
+
+      <div class="space-y-3 text-xs">
+        <div>
+          <h3 class="font-bold text-teal-700 mb-1">👶 Đồ cho bé sơ sinh:</h3>
+          <ul class="list-disc pl-4 space-y-1 text-slate-600">
+            <li>3 - 5 bộ quần áo sơ sinh cài nút</li>
+            <li>Nón thóp, bao tay bao chân (3 - 5 bộ)</li>
+            <li>Khăn quấn, khăn xô lau mặt & khăn tắm</li>
+            <li>Tã dán sơ sinh (Size NB) & khăn giấy ướt</li>
+          </ul>
+        </div>
+
+        <hr class="border-dashed border-rose-100">
+
+        <div>
+          <h3 class="font-bold text-rose-700 mb-1">🤰 Đồ cho mẹ đi sinh:</h3>
+          <ul class="list-disc pl-4 space-y-1 text-slate-600">
+            <li>Quần áo rộng rãi mở nút cho con bú</li>
+            <li>Băng vệ sinh mama & quần lót giấy dùng 1 lần</li>
+            <li>Giấy tờ tùy thân, BHYT & Sổ khám thai đầy đủ</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- NÚT MUA SẮM TIẾP THỊ Ở CUỐI TRANG -->
+    <section class="bg-white/90 rounded-3xl p-4 shadow-sm border border-rose-100 text-center space-y-3">
+      <h2 class="font-black text-rose-800 text-sm">🛍️ ĐỒ DÙNG THIẾT YẾU CHO MẸ BẦU & ĐI SINH</h2>
+      <p class="text-xs text-slate-500">Chạm vào sản phẩm bên dưới để xem chi tiết trên Shopee:</p>
+
+      <div class="grid grid-cols-1 gap-3">
+        <!-- NÚT 1: GỐI ÔM BÀ BẦU -->
+        <button onclick="openShopee(LINK_GOI_OM)" class="w-full bg-gradient-to-r from-rose-400 to-pink-400 text-white font-black text-xs py-3.5 px-4 rounded-2xl shadow-sm flex items-center justify-between border border-white active:scale-95 transition">
+          <div class="flex items-center gap-2.5">
+            <span class="text-2xl">🛋️</span>
+            <div class="text-left">
+              <p class="text-xs font-black">Gối Ôm Bà Bầu Chữ U Nâng Đỡ Bụng</p>
+              <p class="text-[10px] text-rose-100 font-normal">Giúp mẹ bầu ngủ ngon, giảm đau lưng</p>
+            </div>
+          </div>
+          <span class="bg-white/20 text-[10px] px-2.5 py-1 rounded-full uppercase">Xem Shopee ➔</span>
+        </button>
+
+        <!-- NÚT 2: LÀN ĐI SINH -->
+        <button onclick="openShopee(LINK_LAN_DI_SINH)" class="w-full bg-gradient-to-r from-teal-400 to-emerald-400 text-white font-black text-xs py-3.5 px-4 rounded-2xl shadow-sm flex items-center justify-between border border-white active:scale-95 transition">
+          <div class="flex items-center gap-2.5">
+            <span class="text-2xl">🧺</span>
+            <div class="text-left">
+              <p class="text-xs font-black">Làn / Giỏ Đựng Đồ Đi Sinh Đa Năng</p>
+              <p class="text-[10px] text-teal-100 font-normal">Đựng trọn bộ đồ sơ sinh gọn gàng</p>
+            </div>
+          </div>
+          <span class="bg-white/20 text-[10px] px-2.5 py-1 rounded-full uppercase">Xem Shopee ➔</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- THANH BOTTOM NAV CỐ ĐỊNH MÀU DỊU -->
+  <nav class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[calc(100%-1.5rem)] max-w-md bg-white/90 backdrop-blur-md rounded-3xl p-2.5 shadow-md border border-rose-200 flex justify-around items-center z-50">
+    <button onclick="openShopee(LINK_GOI_OM)" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-rose-600 hover:scale-105 transition">
+      <span class="text-lg">🛋️</span>
+      <span>Gối Ôm Bầu</span>
+    </button>
+    <button onclick="openShopee(LINK_LAN_DI_SINH)" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-teal-600 hover:scale-105 transition">
+      <span class="text-lg">🧺</span>
+      <span>Làn Đi Sinh</span>
+    </button>
+    <button onclick="openShopee()" class="flex flex-col items-center gap-0.5 text-[11px] font-bold text-amber-600 animate-pulse">
+      <span class="text-lg">🎁</span>
+      <span>Voucher Shopee</span>
+    </button>
+  </nav>
+
+</body>
+</html>
