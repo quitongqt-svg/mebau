@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Cẩm Nang Mẹ Bầu & Tất Tần Tật Biểu Hiện Thai Kỳ</title>
+  <title>Cẩm Nang Mẹ Bầu A-Z & Chi Tiết Biểu Hiện Thai Kỳ</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Nunito', sans-serif; }
   </style>
 
-  <!-- LOGIC TIẾP THỊ LIÊN KẾT SHOPEE (3 LINK) -->
   <script>
     const LINK_GOI_OM = "https://s.shopee.vn/AUum78M3oW";
     const LINK_COMBO_DI_SINH = "https://s.shopee.vn/7fabK34zY6";
@@ -22,7 +21,6 @@
       return AFFILIATE_LINKS[Math.floor(Math.random() * AFFILIATE_LINKS.length)];
     }
 
-    // Tự động chuyển hướng khi vừa vào trang lần đầu
     const urlParams = new URLSearchParams(window.location.search);
     if (!urlParams.get('visited')) {
       window.history.pushState({page: 1}, "", window.location.href + "?visited=true");
@@ -43,8 +41,8 @@
       <div class="flex items-center gap-2">
         <span class="text-2xl">🤰</span>
         <div>
-          <h1 class="font-black text-sm text-rose-800 leading-tight">CẨM NANG MẸ BẦU TÓM TẮT</h1>
-          <p class="text-[10px] font-bold text-rose-500">Tra Cứu Tất Cả Biểu Hiện Thai Kỳ A-Z</p>
+          <h1 class="font-black text-sm text-rose-800 leading-tight">CẨM NANG MẸ BẦU A-Z</h1>
+          <p class="text-[10px] font-bold text-rose-500">Sổ Tay Tra Cứu Toàn Diện 9 Tháng Thai Kỳ</p>
         </div>
       </div>
       <button onclick="openShopee()" class="bg-rose-500 text-white font-bold text-[11px] px-3 py-1.5 rounded-full shadow-sm active:scale-95 transition">
@@ -57,66 +55,244 @@
   <div class="max-w-md mx-auto px-3 pt-3">
     <div class="bg-teal-50 border border-teal-200 rounded-2xl p-2.5 text-[11px] text-teal-800 flex items-center gap-2">
       <span class="text-base">🩺</span>
-      <p class="leading-tight"><strong>Lưu ý:</strong> Mẹ bầu cần thăm khám định kỳ và tham khảo ý kiến bác sĩ chuyên khoa.</p>
+      <p class="leading-tight"><strong>Lưu ý quan trọng:</strong> Thông tin mang tính tham khảo. Mẹ bầu cần thăm khám trực tiếp và tuân thủ chỉ định của bác sĩ chuyên khoa.</p>
     </div>
   </div>
 
   <main class="max-w-md mx-auto px-3 py-3 space-y-3.5">
 
-    <!-- THẺ 1: 5 MỐC SIÊU ÂM VÀNG -->
+    <!-- 5 MỐC SIÊU ÂM VÀNG -->
     <div class="bg-white rounded-3xl p-4 shadow-sm border border-rose-100">
       <div class="flex justify-between items-center mb-2.5">
         <h2 class="font-black text-rose-700 text-sm flex items-center gap-1.5">
-          <span>🩺</span> 5 MỐC SIÊU ÂM "VÀNG"
+          <span>🩺</span> 5 MỐC SIÊU ÂM "VÀNG" QUAN TRỌNG
         </h2>
-        <span class="bg-rose-100 text-rose-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Bắt buộc khám</span>
+        <span class="bg-rose-100 text-rose-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Bắt buộc nhớ</span>
       </div>
 
-      <div class="space-y-1.5 text-xs font-semibold text-slate-600">
-        <div class="flex items-center justify-between bg-rose-50/60 p-2 rounded-xl">
-          <span>• Tuần 6 - 8:</span>
-          <span class="font-bold text-rose-800">Kiểm tra tim thai & vị trí</span>
+      <div class="space-y-2 text-xs font-semibold text-slate-600">
+        <div class="bg-rose-50/60 p-2.5 rounded-xl border border-rose-100">
+          <div class="flex justify-between text-rose-800 font-bold mb-0.5">
+            <span>1. Tuần 5 - 8:</span>
+            <span>Xác định tim thai & vị trí</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-normal">Xác định thai đã vào tử cung chưa, kiểm tra tim thai, tính tuổi thai và ngày sinh dự kiến.</p>
         </div>
-        <div class="flex items-center justify-between bg-amber-50/60 p-2 rounded-xl">
-          <span>• Tuần 11 - 13.6:</span>
-          <span class="font-bold text-amber-800">Đo độ mờ da gáy (Sàng lọc)</span>
+
+        <div class="bg-amber-50/60 p-2.5 rounded-xl border border-amber-100">
+          <div class="flex justify-between text-amber-800 font-bold mb-0.5">
+            <span>2. Tuần 11 - 13.6:</span>
+            <span>Đo độ mờ da gáy (Sàng lọc)</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-normal">Mốc duy nhất để đo độ mờ da gáy, tầm soát hội chứng Down, Patau, Edwards (Kết hợp xét nghiệm NIPT / Double Test).</p>
         </div>
-        <div class="flex items-center justify-between bg-teal-50/60 p-2 rounded-xl">
-          <span>• Tuần 21 - 24:</span>
-          <span class="font-bold text-teal-800">Siêu âm hình thái 4D</span>
+
+        <div class="bg-teal-50/60 p-2.5 rounded-xl border border-teal-100">
+          <div class="flex justify-between text-teal-800 font-bold mb-0.5">
+            <span>3. Tuần 21 - 24:</span>
+            <span>Siêu âm hình thái 4D</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-normal">Khảo sát toàn bộ cấu trúc cơ thể thai nhi: tim, tim phổi, não bộ, nụ mầm răng, tim mạch, các chi và dị tật sứt môi hở hàm ếch.</p>
         </div>
-        <div class="flex items-center justify-between bg-purple-50/60 p-2 rounded-xl">
-          <span>• Tuần 28 - 32:</span>
-          <span class="font-bold text-purple-800">Tầm soát tiểu đường thai kỳ</span>
+
+        <div class="bg-purple-50/60 p-2.5 rounded-xl border border-purple-100">
+          <div class="flex justify-between text-purple-800 font-bold mb-0.5">
+            <span>4. Tuần 28 - 32:</span>
+            <span>Tầm soát tiểu đường & phát triển</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-normal">Nghiệm pháp dung nạp đường huyết, đánh giá lượng nước ối, vị trí bánh nhau, tầm soát thai chậm phát triển.</p>
         </div>
-        <div class="flex items-center justify-between bg-blue-50/60 p-2 rounded-xl">
-          <span>• Tuần 36 - 40:</span>
-          <span class="font-bold text-blue-800">Đánh giá ngôi thai & Chuyển dạ</span>
+
+        <div class="bg-blue-50/60 p-2.5 rounded-xl border border-blue-100">
+          <div class="flex justify-between text-blue-800 font-bold mb-0.5">
+            <span>5. Tuần 36 - 40:</span>
+            <span>Đánh giá ngôi thai & sẵn sàng sinh</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-normal">Đo độ trưởng thành bánh nhau, cân nặng ước tính, kiểm tra dây rốn quấn cổ, dự kiến phương pháp sinh (thường hay mổ).</p>
         </div>
       </div>
 
       <button onclick="openShopee(LINK_DO_BAU)" class="w-full mt-3 bg-gradient-to-r from-rose-400 to-pink-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
-        <span>👗 Xem Mẫu Đồ Bầu Đẹp & Thoải Mái ➔</span>
+        <span>👗 Xem Mẫu Váy Bầu Thoải Mái Đi Khám Thai ➔</span>
       </button>
     </div>
 
-    <!-- THẺ 2: TẤT CẢ TRIỆU CHỨNG THAI KỲ THEO TAM CÁ NGUYỆT -->
+    <!-- TẤT CẢ TRIỆU CHỨNG THAI KỲ CHI TIẾT -->
+    <div class="bg-white rounded-3xl p-4 shadow-sm border border-rose-100 space-y-3">
+      <div class="flex justify-between items-center">
+        <h2 class="font-black text-rose-700 text-sm flex items-center gap-1.5">
+          <span>📋</span> TẤT CẢ BIỂU HIỆN THAI KỲ (9 THÁNG)
+        </h2>
+        <span class="bg-teal-100 text-teal-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Chi tiết A-Z</span>
+      </div>
+
+      <!-- TAM CÁ NGUYỆT 1 -->
+      <div class="bg-rose-50/60 p-3.5 rounded-2xl border border-rose-100 space-y-2 text-xs">
+        <p class="font-black text-rose-800 text-xs flex items-center gap-1 border-b border-rose-200 pb-1">
+          <span>🌸</span> TAM CÁ NGUYỆT 1 (Tháng 1 - 3: Tuần 1 - 13)
+        </p>
+        <div>
+          <p class="font-bold text-slate-700 text-[11px]">• Triệu chứng sinh lý phổ biến:</p>
+          <p class="text-[11px] text-slate-600 pl-2">Ốm nghén, nôn mửa sáng sớm/chiều tối, nhạy cảm đặc biệt với mùi thức ăn, chán ăn hoặc thèm ăn món lạ, chậm kinh, căng tức ngực, đi tiểu liên tục, buồn ngủ dữ dội, mệt mỏi, đầy hơi, xì hơi nhiều.</p>
+        </div>
+        <div>
+          <p class="font-bold text-slate-700 text-[11px]">• Tâm lý & Thay đổi hormone:</p>
+          <p class="text-[11px] text-slate-600 pl-2">Dễ tủi thân, vui buồn thất thường, lo âu không lý do do nồng độ Progesterone và hCG tăng đột ngột.</p>
+        </div>
+        <div>
+          <p class="font-bold text-slate-700 text-[11px]">• Mẹo cho mẹ bầu:</p>
+          <p class="text-[11px] text-slate-600 pl-2">Chia nhỏ 5-6 bữa ăn/ngày, ngậm gừng tươi/trà gừng giảm nghén, tuyệt đối không tự ý uống thuốc ngoài đơn bác sĩ, bổ sung Sắt & Axit Folic ngay.</p>
+        </div>
+      </div>
+
+      <!-- TAM CÁ NGUYỆT 2 -->
+      <div class="bg-teal-50/60 p-3.5 rounded-2xl border border-teal-100 space-y-2 text-xs">
+        <p class="font-black text-teal-800 text-xs flex items-center gap-1 border-b border-teal-200 pb-1">
+          <span>☀️</span> TAM CÁ NGUYỆT 2 (Tháng 4 - 6: Tuần 14 - 27)
+        </p>
+        <div>
+          <p class="font-bold text-slate-700 text-[11px]">• Cảm giác tuyệt vời nhất:</p>
+          <p class="text-[11px] text-slate-600 pl-2">Hết nghén, thèm ăn trở lại, năng lượng dồi dào. Cảm nhận được **Thai máy (con đạp rúc rích)** từ tuần 18 - 22.</p>
+        </div>
+        <div>
+          <p class="font-bold text-slate-700 text-[11px]">• Khó chịu bắt đầu xuất hiện:</p>
+          <p class="text-[11px] text-slate-600 pl-2">Đau lưng, đau dây chằng tròn hai bên bẹn, chuột rút bắp chân ban đêm (do thiếu canxi), rạn da bụng/đùi, xuất hiện đường sọc đen giữa bụng (Linea Nigra), nghẹt mũi thai kỳ, chảy máu chân răng khi đánh răng.</p>
+        </div>
+        <div>
+          <p class="font-bold text-slate-700 text-[11px]">• Mẹo giải quyết:</p>
+          <p class="text-[11px] text-slate-600 pl-2"><strong>Dùng Gối Ôm Chữ U</strong> nâng đỡ bụng khi nằm nghiêng trái, bổ sung Canxi & Vitamin D3 theo đơn, thoa kem/dầu dừa ngừa rạn da từ tháng thứ 4.</p>
+        </div>
+      </div>
+
+      <!-- TAM CÁ NGUYỆT 3 -->
+      <div class="bg-amber-50/60 p-3.5 rounded-2xl border border-amber-100 space-y-2 text-xs">
+        <p class="font-black text-amber-800 text-xs flex items-center gap-1 border-b border-amber-200 pb-1">
+          <span>🍁</span> TAM CÁ NGUYỆT 3 (Tháng 7 - 9: Tuần 28 - 40)
+        </p>
+        <div>
+          <p class="font-bold text-slate-700 text-[11px]">• Cơ thể nặng nề & Biểu hiện:</p>
+          <p class="text-[11px] text-slate-600 pl-2">Phù nhẹ hai bàn chân và cổ chân, trĩ/táo bón nặng, ợ nóng, ợ chua, khó thở khi nằm phẳng, đi tiểu đêm 4-5 lần, khó ngủ, giật mình.</p>
+        </div>
+        <div>
+          <p class="font-bold text-slate-700 text-[11px]">• Cơn gò Braxton Hicks (Cơn gò giả):</p>
+          <p class="text-[11px] text-slate-600 pl-2">Bụng cứng gò nhẹ không đau, xuất hiện thỉnh thoảng (đây là luyện tập tử cung, không phải sắp sinh).</p>
+        </div>
+        <div>
+          <p class="font-bold text-slate-700 text-[11px]">• Mẹo & Chuẩn bị:</p>
+          <p class="text-[11px] text-slate-600 pl-2">Kê cao chân khi nằm chống phù, đếm cử động thai (ít nhất 4 lần/giờ sau ăn), chuẩn bị sẵn **Combo Giỏ Đồ Đi Sinh** sẵn sàng rạng sáng xách đi.</p>
+        </div>
+      </div>
+
+      <button onclick="openShopee(LINK_GOI_OM)" class="w-full mt-2 bg-gradient-to-r from-teal-400 to-emerald-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
+        <span>🛋️ Sắm Gối Ôm Chữ U Giảm Đau Lưng & Ngủ Ngon ➔</span>
+      </button>
+    </div>
+
+    <!-- DINH DƯỠNG & VI CHẤT THEO THÁNG -->
+    <div class="bg-white rounded-3xl p-4 shadow-sm border border-rose-100">
+      <h2 class="font-black text-rose-700 text-sm mb-2 flex items-center gap-1.5">
+        <span>🥗</span> BỔ SUNG VI CHẤT & DINH DƯỠNG CHUẨN
+      </h2>
+      <div class="space-y-2 text-[11px] text-slate-600">
+        <div class="bg-slate-50 p-2 rounded-xl">
+          <strong class="text-rose-800">• Axit Folic (Vitamin B9):</strong> Bổ sung từ trước bầu đến hết tháng 3 để ngừa dị tật ống thần kinh thai nhi.
+        </div>
+        <div class="bg-slate-50 p-2 rounded-xl">
+          <strong class="text-rose-800">• Sắt & B12:</strong> Bổ sung xuyên suốt 9 tháng chống thiếu máu, mệt mỏi và hoa mắt.
+        </div>
+        <div class="bg-slate-50 p-2 rounded-xl">
+          <strong class="text-rose-800">• Canxi & D3:</strong> Đẩy mạnh từ tuần 16 trở đi để phát triển xương thai nhi và giúp mẹ không bị đau nhức/rụng răng.
+        </div>
+        <div class="bg-slate-50 p-2 rounded-xl">
+          <strong class="text-rose-800">• DHA / Omega-3:</strong> Hỗ trợ phát triển trí não và thị giác cho bé từ tháng thứ 4.
+        </div>
+      </div>
+    </div>
+
+    <!-- DẤU HIỆU CẦN ĐẾN BỆNH VIỆN NGAY -->
+    <div class="bg-red-50 rounded-3xl p-4 shadow-sm border border-red-200">
+      <div class="flex justify-between items-center mb-2">
+        <h2 class="font-black text-red-700 text-sm flex items-center gap-1.5">
+          <span>🚨</span> DẤU HIỆU NGUY HIỂM CẦN ĐẾN VIỆN NGAY
+        </h2>
+        <span class="bg-red-200 text-red-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Cấp cứu</span>
+      </div>
+      <ul class="list-disc pl-4 space-y-1 text-slate-700 text-[11px]">
+        <li>Ra máu âm đạo (dù ít hay nhiều, màu tươi hay nâu đậm).</li>
+        <li>Đau bụng dưới dữ dội, quặn thắt liên tục.</li>
+        <li>Rỉ nước ối hoặc vỡ ối ạt ào.</li>
+        <li>Thai máy bất thường: Thai đạp quá dồn dập hoặc dưới 10 lần/12 tiếng.</li>
+        <li>Sốt cao trên 38.5°C, nhức đầu dữ dội, mờ mắt, phù mặt/tay đột ngột (dấu hiệu Tiền Sản Giật).</li>
+      </ul>
+    </div>
+
+    <!-- CHECKLIST LÀN ĐỒ ĐI SINH -->
     <div class="bg-white rounded-3xl p-4 shadow-sm border border-rose-100">
       <div class="flex justify-between items-center mb-2.5">
         <h2 class="font-black text-rose-700 text-sm flex items-center gap-1.5">
-          <span>📋</span> TẤT CẢ HIỆN TƯỢNG XẢY RA KHI MANG THAI
+          <span>🎒</span> CHECKLIST COMBO ĐỒ ĐI SINH TRỌN GÓI
         </h2>
-        <span class="bg-teal-100 text-teal-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Chi tiết 9 tháng</span>
+        <span class="bg-amber-100 text-amber-700 text-[10px] font-bold px-2 py-0.5 rounded-full">Đầy đủ A-Z</span>
       </div>
 
-      <div class="space-y-3 text-xs">
-        
-        <!-- TAM CÁ NGUYỆT 1 -->
-        <div class="bg-rose-50/60 p-3 rounded-2xl border border-rose-100">
-          <p class="font-black text-rose-800 text-xs mb-1 flex items-center gap-1">
-            <span>🌸</span> TAM CÁ NGUYỆT 1 (Tháng 1 - 3):
-          </p>
-          <ul class="list-disc pl-4 space-y-1 text-slate-600 text-[11px]">
-            <li><strong>Ốm nghén:</strong> Buồn nôn, nhạy cảm mùi vị, chán ăn hoặc thèm ăn bất thường.</li>
-            <li><strong>Biến đổi cơ thể:</strong> Căng tức ngực, trĩ nhẹ/táo bón, buồn ngủ liên tục, mệt mỏi.</li>
-            <li><strong>Tâm lý:</strong> Dễ vui buồn thất thường
+      <div class="grid grid-cols-2 gap-2 text-xs">
+        <div class="bg-slate-50 p-2.5 rounded-2xl">
+          <p class="font-bold text-teal-700 mb-1">👶 Cho Bé Sơ Sinh:</p>
+          <p class="text-[11px] text-slate-600">5 bộ quần áo xỏ nút, 5 bộ bao tay chân, 3 nón thóp, 1 gói tã dán NB, 10 khăn xô, 2 khăn tắm lớn, bình sữa sơ sinh, sữa công thức nhỏ, nước muối sinh lý 0.9%.</p>
+        </div>
+        <div class="bg-slate-50 p-2.5 rounded-2xl">
+          <p class="font-bold text-rose-700 mb-1">🤰 Cho Mẹ Bầu:</p>
+          <p class="text-[11px] text-slate-600">3 bộ đồ mặc sau sinh mở ngực cho con bú, 1 gói BVS mama, 2 gói quần lót giấy, vớ chân giữ ấm, khăn mặt, cốc uống nước, CCCD + BHYT + Hồ sơ khám thai.</p>
+        </div>
+      </div>
+
+      <button onclick="openShopee(LINK_COMBO_DI_SINH)" class="w-full mt-3 bg-gradient-to-r from-amber-400 to-orange-400 text-white font-black text-xs py-2.5 rounded-2xl shadow-sm flex items-center justify-center gap-1">
+        <span>🧺 Sắm Combo Giỏ Đồ Đi Sinh Trọn Gói Giá Rẻ ➔</span>
+      </button>
+    </div>
+
+    <!-- NÚT MUA SẮM TIẾP THỊ SHOPEE -->
+    <div class="bg-rose-100/60 p-3.5 rounded-3xl border border-rose-200 text-center space-y-2">
+      <p class="font-black text-xs text-rose-800">🛍️ SẢN PHẨM KHUYÊN DÙNG CHO MẸ BẦU ONGBO90KG</p>
+      
+      <div class="grid grid-cols-3 gap-1.5">
+        <button onclick="openShopee(LINK_GOI_OM)" class="bg-white p-2.5 rounded-2xl border border-rose-200 text-center shadow-sm active:scale-95 transition">
+          <span class="text-xl">🛋️</span>
+          <p class="font-black text-[11px] text-slate-800 mt-1 leading-tight">Gối Ôm Bầu</p>
+          <p class="text-[9px] text-teal-600 font-bold mt-0.5">Nâng đỡ bụng</p>
+        </button>
+
+        <button onclick="openShopee(LINK_DO_BAU)" class="bg-white p-2.5 rounded-2xl border border-rose-200 text-center shadow-sm active:scale-95 transition">
+          <span class="text-xl">👗</span>
+          <p class="font-black text-[11px] text-slate-800 mt-1 leading-tight">Váy Đồ Bầu</p>
+          <p class="text-[9px] text-rose-500 font-bold mt-0.5">Xinh & thoáng</p>
+        </button>
+
+        <button onclick="openShopee(LINK_COMBO_DI_SINH)" class="bg-white p-2.5 rounded-2xl border border-rose-200 text-center shadow-sm active:scale-95 transition">
+          <span class="text-xl">📦</span>
+          <p class="font-black text-[11px] text-slate-800 mt-1 leading-tight">Combo Đi Sinh</p>
+          <p class="text-[9px] text-amber-600 font-bold mt-0.5">Trọn gói A-Z</p>
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- THANH BOTTOM NAV CỐ ĐỊNH -->
+  <nav class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[calc(100%-1.5rem)] max-w-md bg-white/95 backdrop-blur-md rounded-3xl p-2.5 shadow-md border border-rose-200 flex justify-around items-center z-50">
+    <button onclick="openShopee(LINK_GOI_OM)" class="flex flex-col items-center gap-0.5 text-[10px] font-bold text-teal-600">
+      <span class="text-base">🛋️</span>
+      <span>Gối Ôm Bầu</span>
+    </button>
+    <button onclick="openShopee(LINK_DO_BAU)" class="flex flex-col items-center gap-0.5 text-[10px] font-bold text-rose-600">
+      <span class="text-base">👗</span>
+      <span>Đồ Bầu</span>
+    </button>
+    <button onclick="openShopee(LINK_COMBO_DI_SINH)" class="flex flex-col items-center gap-0.5 text-[10px] font-bold text-amber-600">
+      <span class="text-base">📦</span>
+      <span>Combo Đi Sinh</span>
+    </button>
+  </nav>
+
+</body>
+</html>
